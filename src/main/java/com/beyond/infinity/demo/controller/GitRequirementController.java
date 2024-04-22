@@ -71,7 +71,7 @@ public class GitRequirementController {
 
         HttpEntity<GitRequest> jiraRequestEntity=new HttpEntity<>(gitRequest, jiraHeaders );
 
-        String serverUrl="https://ideally-witty-joey.ngrok-free.app/get-git-details";
+        String serverUrl="http://localhost:8080/get-git-details";
 
 
         String result = restTemplate.postForObject(serverUrl, jiraRequestEntity, String.class);
