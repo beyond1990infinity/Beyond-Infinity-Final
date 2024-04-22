@@ -77,7 +77,7 @@ public class SearchController {
 
         HttpEntity<SearchRequest> searchRequestEntity=new HttpEntity<>(searchRequest, confHeaders );
 
-        String serverUrl="https://ideally-witty-joey.ngrok-free.app/get-input-match";
+        String serverUrl="http://localhost:8080/get-input-match";
 
         String result = restTemplate.postForObject(serverUrl,searchRequestEntity, String.class);
 
