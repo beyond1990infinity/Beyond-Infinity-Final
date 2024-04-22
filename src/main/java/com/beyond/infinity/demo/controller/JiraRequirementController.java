@@ -98,7 +98,7 @@ public class JiraRequirementController {
 
         HttpEntity<JiraEpicResponse> jiraRequestEntity=new HttpEntity<>(jiraResponse, jiraHeaders );
 
-        serverUrl="https://ideally-witty-joey.ngrok-free.app/get-epic-summary";
+        serverUrl="http://localhost:8080/get-epic-summary";
 
         String result = restTemplate.postForObject(serverUrl, jiraRequestEntity, String.class);
 
