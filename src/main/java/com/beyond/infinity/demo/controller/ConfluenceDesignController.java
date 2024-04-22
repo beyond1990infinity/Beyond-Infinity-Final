@@ -82,7 +82,7 @@ public class ConfluenceDesignController {
 
         HttpEntity<ConfluencePageResponse> confRequestEntity=new HttpEntity<>(confluencePageResponse, confHeaders );
 
-        serverUrl="https://ideally-witty-joey.ngrok-free.app/get-brd-summary";
+        serverUrl="http://localhost:8080/get-brd-summary";
 
         String result = restTemplate.postForObject(serverUrl,confRequestEntity, String.class);
 
